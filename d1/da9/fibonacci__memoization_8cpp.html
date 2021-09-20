@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('d1/da9/fibonacci__memoization_8cpp.htm
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for fibonacci_memoization.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dd5/fibonacci__memoization_8cpp__incl.svg" width="314" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dd5/fibonacci__memoization_8cpp__incl.svg" width="260" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -120,9 +120,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a471d11475d101dcb906966aecb24b40f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da9/fibonacci__memoization_8cpp.html#a471d11475d101dcb906966aecb24b40f">dynamic_programming::fibonacci_memoization::nthFibonacci</a> (int n, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map.html">std::unordered_map</a>&lt; int, uint32_t &gt; &amp;map_elements)</td></tr>
-<tr class="memdesc:a471d11475d101dcb906966aecb24b40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function that implements the nth Fibonacci number problem using memoization.  <a href="../../d1/da9/fibonacci__memoization_8cpp.html#a471d11475d101dcb906966aecb24b40f">More...</a><br /></td></tr>
-<tr class="separator:a471d11475d101dcb906966aecb24b40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2b8f2ec4885dac58904ca16ae4fdce"><td class="memItemLeft" align="right" valign="top">long long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da9/fibonacci__memoization_8cpp.html#aaf2b8f2ec4885dac58904ca16ae4fdce">dynamic_programming::fibonacci_memoization::nthFibonacci</a> (int n, int term[])</td></tr>
+<tr class="memdesc:aaf2b8f2ec4885dac58904ca16ae4fdce"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function that implements the nth Fibonacci number problem using memoization.  <a href="../../d1/da9/fibonacci__memoization_8cpp.html#aaf2b8f2ec4885dac58904ca16ae4fdce">More...</a><br /></td></tr>
+<tr class="separator:aaf2b8f2ec4885dac58904ca16ae4fdce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da9/fibonacci__memoization_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
 <tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <a href="../../d1/da9/fibonacci__memoization_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">More...</a><br /></td></tr>
 <tr class="separator:aa8dca7b867074164d5f45b0f3851269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,11 +152,11 @@ Functions</h2></td></tr>
 
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
-<div class="fragment"><div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>           {</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <a class="code hl_function" href="../../d1/da9/fibonacci__memoization_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
-<div class="ttc" id="afibonacci__memoization_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d1/da9/fibonacci__memoization_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> fibonacci_memoization.cpp:49</div></div>
+<div class="fragment"><div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>           {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_function" href="../../d1/da9/fibonacci__memoization_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
+<div class="ttc" id="afibonacci__memoization_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../d1/da9/fibonacci__memoization_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition:</b> fibonacci_memoization.cpp:50</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -166,14 +166,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a471d11475d101dcb906966aecb24b40f" name="a471d11475d101dcb906966aecb24b40f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a471d11475d101dcb906966aecb24b40f">&#9670;&nbsp;</a></span>nthFibonacci()</h2>
+<a id="aaf2b8f2ec4885dac58904ca16ae4fdce" name="aaf2b8f2ec4885dac58904ca16ae4fdce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf2b8f2ec4885dac58904ca16ae4fdce">&#9670;&nbsp;</a></span>nthFibonacci()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t dynamic_programming::fibonacci_memoization::nthFibonacci </td>
+          <td class="memname">long long int dynamic_programming::fibonacci_memoization::nthFibonacci </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -181,8 +181,8 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map.html">std::unordered_map</a>&lt; int, uint32_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>map_elements</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>term</em>[]&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -196,30 +196,27 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>The index of the number in a Fibonacci series. </td></tr>
-    <tr><td class="paramname">map_elements</td><td>A map that contains previously encountered index-value pair. </td></tr>
+    <tr><td class="paramname">term</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Element at the nth position in the Fibonacci series. </dd></dl>
 <div class="fragment"><div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">if</span> (n &lt;= 1) {  <span class="comment">// The numbers at index 0 and 1 are also 0 and 1.</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">return</span> n;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span>(map_elements.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map/find.html">find</a>(n) == map_elements.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map/end.html">end</a>())  <span class="comment">// If the element with key: n is not present, find() returns the last element.</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        map_elements.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map/insert.html">insert</a>({n, (<a class="code hl_function" href="../../d1/da9/fibonacci__memoization_8cpp.html#a471d11475d101dcb906966aecb24b40f">nthFibonacci</a>(n-1, map_elements) + <a class="code hl_function" href="../../d1/da9/fibonacci__memoization_8cpp.html#a471d11475d101dcb906966aecb24b40f">nthFibonacci</a>(n-2,map_elements))});</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> map_elements.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map/at.html">at</a>(n);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
-<div class="ttc" id="aat_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_map/at.html">std::unordered_map::at</a></div><div class="ttdeci">T at(T... args)</div></div>
-<div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_map/end.html">std::unordered_map::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="afibonacci__memoization_8cpp_html_a471d11475d101dcb906966aecb24b40f"><div class="ttname"><a href="../../d1/da9/fibonacci__memoization_8cpp.html#a471d11475d101dcb906966aecb24b40f">dynamic_programming::fibonacci_memoization::nthFibonacci</a></div><div class="ttdeci">uint32_t nthFibonacci(int n, std::unordered_map&lt; int, uint32_t &gt; &amp;map_elements)</div><div class="ttdoc">The function that implements the nth Fibonacci number problem using memoization.</div><div class="ttdef"><b>Definition:</b> fibonacci_memoization.cpp:31</div></div>
-<div class="ttc" id="afind_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_map/find.html">std::unordered_map::find</a></div><div class="ttdeci">T find(T... args)</div></div>
-<div class="ttc" id="ainsert_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_map/insert.html">std::unordered_map::insert</a></div><div class="ttdeci">T insert(T... args)</div></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">if</span>(n&lt;=1)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">return</span> n;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">if</span>(term[n] != -1)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> term[n];</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">return</span> term[n] = <a class="code hl_function" href="../../d1/da9/fibonacci__memoization_8cpp.html#aaf2b8f2ec4885dac58904ca16ae4fdce">nthFibonacci</a>(n-1,term) + <a class="code hl_function" href="../../d1/da9/fibonacci__memoization_8cpp.html#aaf2b8f2ec4885dac58904ca16ae4fdce">nthFibonacci</a>(n-2,term);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="ttc" id="afibonacci__memoization_8cpp_html_aaf2b8f2ec4885dac58904ca16ae4fdce"><div class="ttname"><a href="../../d1/da9/fibonacci__memoization_8cpp.html#aaf2b8f2ec4885dac58904ca16ae4fdce">dynamic_programming::fibonacci_memoization::nthFibonacci</a></div><div class="ttdeci">long long int nthFibonacci(int n, int term[])</div><div class="ttdoc">The function that implements the nth Fibonacci number problem using memoization.</div><div class="ttdef"><b>Definition:</b> fibonacci_memoization.cpp:31</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/da9/fibonacci__memoization_8cpp_a471d11475d101dcb906966aecb24b40f_cgraph.svg" width="395" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/da9/fibonacci__memoization_8cpp_aaf2b8f2ec4885dac58904ca16ae4fdce_cgraph.svg" width="176" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -250,43 +247,47 @@ Here is the call graph for this function:</div>
 
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                   {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// 1st test</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// 7 return 13.</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">int</span> num1 = 7;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map.html">std::unordered_map&lt;int,uint32_t&gt;</a> map_elements1;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1... &quot;</span>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num1, map_elements1) == 13); <span class="comment">// 7th fibonacci number is 13.</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// 2nd test</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// 45 return 1134903170.</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">int</span> num2 = 45;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map.html">std::unordered_map&lt;int,uint32_t&gt;</a> map_elements2;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2... &quot;</span>;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num2, map_elements2) == 1134903170); <span class="comment">// 45th fibonacci number is 1134903170.</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// 3rd test</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// 15 return 610.</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">int</span> num3 = 15;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map.html">std::unordered_map&lt;int,uint32_t&gt;</a> map_elements3;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3... &quot;</span>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num3, map_elements3) == 610); <span class="comment">// 15th fibonacci number is 610.</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// 4th test</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// 31 return 1346269.</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">int</span> num4 = 31;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/unordered_map.html">std::unordered_map&lt;int,uint32_t&gt;</a> map_elements4;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 4... &quot;</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num4, map_elements4) ==  1346269); <span class="comment">// 31th fibonacci number is 1346269.</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="fragment"><div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                   {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// 1st test</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// 7 return 13.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">int</span> num1 = 7;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">int</span> term1[num1+1];\</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    memset(term1,-1,<span class="keyword">sizeof</span>(term1));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1... &quot;</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num1, term1) == 13); <span class="comment">// 7th fibonacci number is 13.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// 2nd test</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// 45 return 1134903170.</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">int</span> num2 = 45;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">int</span> term2[num2+1];</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/memset.html">memset</a>(term2,-1,<span class="keyword">sizeof</span>(term2));</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 2... &quot;</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num2, term2) == 1134903170); <span class="comment">// 45th fibonacci number is 1134903170.</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// 3rd test</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// 15 return 610.</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">int</span> num3 = 15;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">int</span> term3[num3+1];</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/memset.html">memset</a>(term3,-1,<span class="keyword">sizeof</span>(term3));</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 3... &quot;</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num3, term3) == 610); <span class="comment">// 15th fibonacci number is 610.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">// 4th test</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// 31 return 1346269.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">int</span> num4 = 31;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">int</span> term4[num4 + 1] = {0};</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/memset.html">memset</a>(term4,-1,<span class="keyword">sizeof</span>(term4));</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 4... &quot;</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    assert(dynamic_programming::fibonacci_memoization::nthFibonacci(num4, term4) ==  1346269); <span class="comment">// 31th fibonacci number is 1346269.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;passed&quot;</span> &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aunordered_map_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/unordered_map.html">std::unordered_map</a></div></div>
+<div class="ttc" id="amemset_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/memset.html">std::memset</a></div><div class="ttdeci">T memset(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
