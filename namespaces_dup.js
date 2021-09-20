@@ -67,7 +67,7 @@ var namespaces_dup =
         [ "maxProfitByCuttingRod", "d6/d10/cut__rod_8cpp.html#a1cc523a30c18c63eac58220c3c494cfa", null ]
       ] ],
       [ "fibonacci_memoization", null, [
-        [ "nthFibonacci", "d1/da9/fibonacci__memoization_8cpp.html#aaf2b8f2ec4885dac58904ca16ae4fdce", null ]
+        [ "nthFibonacci", "d1/da9/fibonacci__memoization_8cpp.html#ab828300660a56fe136cb9ce92e943568", null ]
       ] ],
       [ "house_robber", null, [
         [ "houseRobber", "d6/d26/house__robber_8cpp.html#a1e497c3e3f169afe5baaae6a5d40cbc8", null ]
