@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md87", null ],
-      [ "Features", "index.html#autotoc_md88", null ],
-      [ "Documentation", "index.html#autotoc_md89", null ],
-      [ "Contributions", "index.html#autotoc_md90", null ]
+      [ "Overview", "index.html#autotoc_md89", null ],
+      [ "Features", "index.html#autotoc_md90", null ],
+      [ "Documentation", "index.html#autotoc_md91", null ],
+      [ "Contributions", "index.html#autotoc_md92", null ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md4", null ],
@@ -136,13 +136,13 @@ var NAVTREEINDEX =
 "d2/de9/heavy__light__decomposition_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
 "d4/d7a/shell__sort2_8cpp.html#a7eb77daed2cf1513f6d68c47a1c2db1c",
 "d5/d8a/classothers_1_1postfix__expression_1_1_stack.html#af06360122e20ce2ba32c574a27a20ba1",
-"d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#aa4d6db56109af196ffc7e5f72bc9907c",
-"d8/d76/morse__code_8cpp.html#a15c66ec8cf4cef0a35c50cbab86965dc",
-"d9/d66/group__machine__learning.html#gae0208548f8b393528e5db01717e88e67",
-"db/d16/0__1__knapsack_8cpp.html",
-"dc/d93/classmachine__learning_1_1neural__network_1_1layers_1_1_dense_layer.html#ac9cda9453c4a0caf5bae7f9213b019a0",
-"de/d48/struct_trie_1_1_trie_node.html",
-"functions_u.html"
+"d6/dae/classothers_1_1lru__cache_1_1_l_r_u_cache.html#a3ee3560a6b90e6f50f6e063d690ba8e8",
+"d8/d69/classgraph_1_1_h_k_graph.html#a9dbda80d02bdc26c3e8ff7330c9be75d",
+"d9/d49/structdata__structures_1_1_node.html#a54a6777e72b639c3ee6446a541db8e78",
+"db/d01/brent__method__extrema_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70",
+"dc/d61/classgraph_1_1_graph.html#a8839fa14bff19d2deab4a618447c13e5",
+"de/d07/cycle__sort_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"functions_func_q.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
